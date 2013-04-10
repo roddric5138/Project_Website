@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Youth Rights Media</title>
+
+<!-- location of external stylesheet-->
+<link rel="stylesheet" href="../css/site.css" media="screen">
+<!-- location of javascript files -->
+<script type="text/javascript" src="../scripts/header.js"></script>
+<script type="text/javascript" src="../scripts/navigation_current.js"></script>
+<script type="text/javascript" src="../scripts/navigation_side_5.js"></script>
+<script type="text/javascript" src="../scripts/footer.js"></script>
+<!-- The following causes IE 8 and earlier to correctly render HTML5 code -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+
+<style type="text/css">
+
+/*------Area Containing Columns Start Specific to this page -------*/
+#inner { 
+    width:100%;/*haslayout*/
+    padding-bottom:150px; /*preserve footer space (plus 10px for text spacing)*/
+    background:#fff;/*set same as wrapper BG or none at all*/
+    border-bottom:0px dashed red;
+}
+#left {
+	
+	margin: 0 auto; /*--keeps text within the column--*/
+	padding:0px;
+    float:left;
+    width:50%; /*--controls width left column (FAUX width must be same)--*/
+    border:0px solid red;/*this is just for #right to reference it's overflow point from*/
+    background:#fff;/*be sure to set this same color on the #faux div*/
+    position:relative;
+    z-index:4;/*layer it above the #faux column*/
+}
+
+#right{ 
+	margin:0 auto;
+    overflow:hidden;/*keep all elements from sliding under floated #left col(IE7 haslayout also)*/
+    background:#fff;/*this needs to be the same as #wrapper bg color (or remove it completely)*/
+    border-top: 0px solid #b4b4b4;}
+
+* html #left{margin-right:0px;}/*kill IE6 3px jog*/
+* html #right {/*IE6 haslayout and overflow reset*/
+    height:1%;
+    overflow:visible;
+}
+
+
+
+
+/*=== This #faux div gives full height color and border to the left column ===*/
+#faux {
+	
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:50%; /*--must be same as LEFT width--*/
+    height:100%;
+    background:#fff;/*be sure to set this same color on the #left div*/
+    z-index:-4000;
+    border-right:0px solid green; /*--middle border--*/}
+
+/*-----------------------Page Fonts---------------------*/
+
+			
+@font-face {
+font-family: fabersans;
+src: url(./fonts/FaberSansPro65reduced.ttf);
+src: url(./fonts/FaberSansPro65reduced.otf);}
+
+@font-face {
+    font-family:decker;
+    src: url(./fonts/decker.ttf);
+    src: url(./fonts/decker.eot); 
+    src: url(./fonts/decker-webfont.woff);}
+
+a { color: #b52d36;}				
+
+/***************Side Bar Nav Start***********************/
+
+
+#sidenav p.style1 { font-family: decker; font-size: 0.90em; letter-spacing: 0.1em; color: #fff; margin-top: -10px; padding-top:0px; background:#1c1c1c !important;}
+#sidenav p.style2 { font-family: decker; font-size: 0.90em; letter-spacing: 0.03em; color: #999;
+					line-height: 1.5em; margin-bottom:0; padding-bottom:0;}
+	
+#sidenav { margin-top:50px;
+		   margin-left: 0;
+		   width: 150px;			
+           border: 0px solid #6e6e6e; 
+           z-index: 50;
+           background: #1c1c1c !important;}
+
+#sidenav ul { list-style-type: none;
+              display: block;               
+              margin: 0;
+              border:0;
+              padding: 0px 15px 10px 15px;
+              -webkit-box-shadow: 0px 3px 4px #6E6E6E;  
+              -moz-box-shadow: 0px 3px 4px #6E6E6E;  
+              box-shadow: 0px 3px 4px #6E6E6E; }
+             
+#sidenav ul li { list-style-type: none;
+	             text-decoration: none;
+	             background: #1c1c1c;
+	             padding-left:0;
+	             padding-right:0;
+	             margin-top:-1px;
+	             padding-bottom: 5px;
+	             padding-top: 6px;
+	             border-bottom: 0;}
+	             
+
+#sidenav ul li a {  font-size: 0.80em;
+                    background: #1c1c1c;
+					color:#000;
+					margin-left: 0px;					
+					margin-left: 0px;
+					margin-top: 0px;
+					padding-bottom:5px; 
+					font-family: fabersans;
+					font-weight:normal;}
+
+#sidenav ul li a.current {color: #ffffff;}  /*sets the current navigation selected from group in sidebar */
+
+
+
+#sidenav a:link    {
+  /* Applies to unvisited links in class mainNav */
+  text-decoration:  none;
+  font-weight:      normal;
+  background-color: transparent;
+  color:            red;
+  }
+
+#sidenav a:visited    {
+  /* Applies to unvisited links in class mainNav */
+  text-decoration:  none;
+  font-weight:      normal;
+  background-color: transparent;
+  color:            red;
+  } 
+
+
+ 
+#sidenav a:hover   {
+  /* Applies to links under the pointer in class mainNav */
+  text-decoration:  none;
+  font-weight:      normal;
+  background-color: #1c1c1c;
+  color:            #fff;
+  
+  } 
+#sidenav a:active  {
+  /* Applies to activated links in class mainNav */
+  text-decoration:  none;
+  font-weight:      normal;
+  background-color: transparent;
+  color:            red;
+  }
+  
+  
+#sidenav ul li:first-child > a 
+{  border-top-left-radius: 0px;  
+-webkit-border-top-left-radius: 0px;  
+-moz-border-radius-topleft: 0px;  
+border-top-right-radius: 0px;  
+-webkit-border-top-right-radius: 0px;  
+-moz-border-radius-topright: 0px;
+}
+
+#sidenav ul li:last-child > a 
+{  border-bottom-left-radius: 0px;  
+-webkit-border-bottom-left-radius: 0px;  
+-moz-border-radius-bottomleft: 0px;  
+border-bottom-right-radius: 0px;  
+-webkit-border-bottom-right-radius: 0px;  
+-moz-border-radius-bottomright: 0px;
+}
+
+#sidenav li:hover > ul 
+{  display: block;
+margin-top: 25px; /*--must match #menu-bar ul  position-top--*/
+margin-left:-0.5px;
+}
+
+#sidenav:after {  content: ".";  
+display: block;  clear: both;  
+visibility: hidden;  line-height: 0;  
+height: 0;
+}
+ 	
+/***************Side Bar Nav End*****************************************************/
+
+
+
+
+
+
+/*------Image block behind side nav -------*/
+
+div.floatLeft { margin-top:20px;
+	            float: left;
+				border: 0px dashed red;}
+				
+
+				
+</style>
+
+</head>
+<body onload="setCurrent()"> 
+
+<div id="wrapper"> <!--start Outside wrapper-->  
+
+<!--header start--->
+<script type="text/javascript">showHeader(header_navigation);</script>
+
+<!--header end--->
+
+<div style="margin-top: -5px;"><!-------Area Contains Overlapped Side Bar Nav Start-------->
+
+<!-----Side Nav Bar Start----->
+<div id="sidenav" style="z-index:50;  float: right; position: absolute;  top:75px; margin-right: 4%; right: 0">
+					<script type="text/javascript">showNav(navigation_side);</script>
+				</div><!-- sidenav end -->
+
+</div><!-------Area Contains Overlapped Side Bar Nav End-------->
+
+
+<!------------------------Bottom Columns Start------------------>
+
+ 
+    <div id="inner">
+        <div id="left">
+      <!---Slideshow Start---->  	 
+         <div  id="slide-container" style="border:0px dashed black;">
+        	
+		 </div>
+      <!---Slideshow End---->     
+              
+              
+              
+              
+        	  <br>
+        	  <br>
+        	  <br>
+        	  <br>
+              <hr class="style-one_a">
+              <h2 class="h2styleleft">FORMS</h2>
+              <hr class="style-one_b">
+              
+              
+              <p class="pstyleleft">
+              Please download and fill the application form for registration.
+              <a href="../pages/Application 2012 - 2013.pdf"> Application form</a>
+			
+              </p>
+              
+              <p class="pstyleleft">
+               	
+			  
+			  
+			 
+			  
+			 
+			  
+			
+              
+            
+        </div><!--end left-->
+        
+        <div id="right"><!--Start Right Column-->
+        	 
+        	           
+        	 
+          <div style="overflow:auto; width: 92%; border:0px dashed red; height:100%;">
+          	
+          	
+          	
+        <div class="floatLeft"> <!--do not remoe image below it is part of side nav-->
+        	 	<img src="./images/content/imageblock1.png" style="float:right;  width:135px; height:150px; border:0px solid blue; margin-right: 0px; margin-top:10px; padding: 0  0 15px 30px">
+        	 	
+        	 	
+        	<div> 
+        	  <br>
+        	  <br>
+        	  <br>
+        	  <br>
+            </div>
+                
+        	  <!--feel free to replace &nbsp; with text otherwise do not remove--><p class="pstyleright">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;          
+              </p>
+              
+              
+        	  
+        	  
+              
+              
+              
+        	  
+              
+              
+        </div><!--end of float-left div-->
+              	
+              	
+              	
+              
+          </div><!--clearboth-->
+              
+              <div style="width: 92%; border:0px dashed red; height:100%;"><!--Do Not Remove Important Start-->
+              <br>
+        	  <br>
+              
+              <h2 class="h2styleright"> </h2>
+              
+               
+              
+              
+              
+              	
+              	<p class="pstyleright">
+                </p>
+              
+              </div><!--Do Not Remove Important End--> 
+                 	
+              	
+             
+              
+              	
+              
+              
+            
+        </div><!--end right-->          
+    </div><!--end inner-->
+     
+    
+<div id="faux"> </div><!--100% height BG and Border for left column-->
+</div> <!--end Outside wrapper-->          
+    
+<div id="footer"><!--footer sits outside of wrapper--> 
+    <script type="text/javascript">showFooter(footer);</script>
+    
+
+</div> <!-- end footer -->
+
+</body>
+</html>

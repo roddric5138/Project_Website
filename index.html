@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Youth Rights Media</title>
+
+<!--Carousel CSS External-->
+<link type="text/css" media="all" rel="stylesheet" href="carousel.css" />
+
+<!--HomePage Structure Scripts-->
+<script type="text/javascript" src="./scripts_homepage/header.js"></script>
+<script type="text/javascript" src="./scripts_homepage/navigation_current.js"></script>
+<script type="text/javascript" src="./scripts_homepage/navigation_side_0.js"></script>
+<script type="text/javascript" src="./scripts_homepage/footer.js"></script>
+
+
+
+<!--Keep These In This Order Do Not Change-->
+<!--Carousel Script start-->
+<script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+<!---Slideshow Script Start--->
+<script src="./lib/jquery.min.js"></script>
+<!--Carousel Script start-->
+<script src="jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
+<!---Slideshow Script Start--->
+<script src="./lib/responsiveslides.min.js"></script>
+
+
+<!--Srcipts Controlling Slideshow & Carousel start-->  
+<script>
+ 
+ jQuery(function () {
+
+
+      
+
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        maxwidth: 800,
+        speed: 800
+      });
+
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        speed: 300,
+        maxwidth: 540
+      });
+
+      // Slideshow 3
+      $("#slider3").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+ 
+ $(function() {
+
+				$('#carousel').carouFredSel({
+					
+					width: '94%',
+					auto: {
+						play: false
+					},
+					prev: '#prev',
+					next: '#next'
+				});
+
+  });
+ 
+ 
+  });
+  
+
+ 
+
+
+</script>
+<!--Srcipts Controlling Slideshow & Carousel end-->
+
+
+<style type="text/css">
+* html #faux {height:999em;}/*IE6 does not support 100% height on AP elements*/
+code {color:none;}
+
+* {margin:0;padding:0;}
+
+html, body {height:100%;}
+
+body {   
+    background:#BFBFBF;}
+    
+html, body, div, span, object, iframe img, a, :focus{ outline: 0;} /*--Removes onclick dotted borders in IE---*/
+
+
+
+
+
+
+/*---Fonts Styles For Left and Right Columns: Note Left and Right are Different---*/
+	
+.h2styleleft { font-family: fabersans;
+           text-transform:uppercase;  
+		   font-size: 0.95em; 
+		   font-weight: normal; 
+		   color:#D81A21;
+		   margin-left:2%; 
+		   padding:1px 40px 0px 40px;
+		   
+		  }
+
+
+.h2styleright { font-family: fabersans;
+           text-transform:uppercase;  
+		   font-size: 0.95em; 
+		   font-weight: normal; 
+		   color:#D81A21;
+		   margin-left:3%; 
+		   padding:1px 0 0 0;
+		   }
+
+   
+
+.pstyleleft { 
+font-family: Verdana;
+font-size: 0.70em;
+line-height: 1.5em;
+letter-spacing: 0;
+word-spacing: normal;
+text-decoration: none;
+color: #444;
+background-color: #fff;
+margin-left: 2%;
+padding:10px 40px 10px 40px;}
+
+.pstyleleft2 { font-family: Candara, sans-serif;
+font-size: 1.2em;
+line-height: 1.5em;
+letter-spacing: 0;
+word-spacing: normal;
+text-decoration: none;
+color: #444;
+background-color: #fff;
+margin-left:0;
+padding:0;}		
+
+.pstyleleft3 { 
+font-family: Verdana;
+font-size: 0.85em;
+line-height: 1.5em;
+letter-spacing: 0;
+word-spacing: normal;
+text-decoration: none;
+color: #444;
+background-color: #fff;
+margin-left: 2%;
+padding:10px 40px 10px 40px;}
+
+.pstyleright { 
+font-family: Verdana;
+font-size: 0.70em;
+line-height: 1.5em;
+letter-spacing: 0;
+word-spacing: normal;
+text-decoration: none;
+color: #444;
+background-color: #fff;
+margin-left: 0%;
+padding:10px 40px 10px 15px;}
+
+.uppercasestyle {
+float:left; 
+font-family: Verdana;
+font-size: 3.0em;
+letter-spacing: 0;
+word-spacing: normal;
+text-decoration: none;
+color:#D81A21;
+background-color: #fff;
+vertical-align:bottom;
+margin-top: 0px;
+padding: 7px 10px 5px 0px;}
+
+/*--------------------------Thumbnails--------------------------*/
+.imgstyleleft {float:left; padding: 0px 15px 5px 0px;}
+.imgstyleright {float:right; padding: 0px 0px 7px 15px;}
+
+
+
+/*--------------------Fonts--------------------*/
+@font-face {
+font-family: fabersans;
+src: url(./fonts/FaberSansPro65reduced.ttf);
+src: url(./fonts/FaberSansPro65reduced.otf);}
+
+@font-face {
+font-family: geosans;
+src: url(./fonts/GeosansLight.ttf);}
+
+a { color: #b52d36;}
+
+
+
+/*----Section Title Horizontal Lines---*/
+
+/*--Horizontal Lines For Left Column--*/
+hr.style-one_a { 
+	border: 0;
+	margin-left: 10%;
+	margin-right: 7%; 
+	padding:0px;
+	height:2px;
+	background: url(./images/content/hrline2.png);
+	background-repeat:no-repeat;}
+hr.style-one_b { 
+	border: 0;
+	margin-top:-2px;
+	margin-left: 10%;
+	margin-right: 7%; 
+	padding:0px;
+	height:4px;
+	background: url(./images/content/hrline3.png);
+	background-repeat:no-repeat;}
+
+/*--Horizontal Lines For Right Column--*/
+hr.style-two_a { 
+	border: 0;
+	margin-left: 3%; 
+	margin-right: 0;
+	padding:0px;
+	height:2px;
+	background: url(./images/content/hrline2.png);
+	background-repeat:no-repeat;}
+
+hr.style-two_b { 
+	border: 0;
+	margin-top:-2px;
+	margin-left: 3%; 
+	margin-right: 0;
+	padding:0px;
+	height:4px;
+	background: url(./images/content/hrline3.png);
+	background-repeat:no-repeat;}
+
+img.floatRight { float:right;
+                 margin:10px;
+                 width:222;
+                 height:240px;
+                 border: 2px solid blue;}
+
+div.floatLeft { margin-top:20px;
+	            float: left;
+				border: 0px dashed red;}
+
+
+
+
+/*=== Float Containment and Bug Fixes (Do Not Alter These!) ===*/
+body:before {/*Opera min-height 100% Fix (Kohoutec)*/
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;/*eliminate need for inner non clearing element (Erik.J)*/
+}
+#wrapper:after,  /* #wrapper:after for IE8 min-height:100% Fix*/
+#inner:after { /* #inner:after for Float Containment*/
+    clear:both;
+    content:"";
+    display:block;
+    height:1%;/*fix IE8 min-height:100% bug (Erik.J)*/
+    font-size:0;
+    }
+
+/*===  Begin Layout Structure ===*/
+
+#wrapper { 
+	margin: 0 auto;
+	width:980px;
+    min-width:980px;/*repeat this rule on the footer*/
+    min-height:100%; /*height is determined from parent's height (html & body)*/   
+    background:#cdcdcd;/*this needs to be the same as #right bg color*/
+    position:relative; /*establish containing block for AP #faux div*/
+    }
+    
+* html #wrapper {height:100%;} /*IE6 treats height as min-height*/ 
+
+#banner{
+    height:94px;
+    width: 980px;
+    background-image: url(./images/redheader.png);
+    background-repeat:repeat-x;
+    border-bottom:0px solid #74564f;
+    position:relative;/*establish stacking order for z-index*/
+    z-index:2;/*layer it above the #faux column*/
+}
+
+#icons { width: 165px; height: 60px; /*off-setting icon left or right*/
+	     position: absolute;
+	     right: 0px;
+	     bottom: 25px; /*off-setting icon from bottom of banner*/
+	     margin: 0; }
+
+
+/*****************************Top Navigation Start***********************************/
+.blackheader {width: 100%; min-width:980px;
+		height:35px;
+		background:black;
+		position: relative;
+		margin:0 0 105px 0; padding:0; /*---pushing first or contents up or down--*/
+		z-index:33;}
+
+
+
+.navwrapper {border: 0px solid green;
+             margin-left: 15%;}
+
+.headerwrapper {width:100%; min-width:980px;
+		height:100px;
+		z-index: 35;}
+
+.bb {border-bottom: 0px solid #333; float: none; 
+     margin-left:25px; margin-right: 25px;
+     padding-right:2%;
+     padding-bottom: 10px;} 
+
+.bba {border-bottom: 1px solid #333; float: none; 
+      width:125px;
+      margin-left:25px; margin-right: 25px;
+      padding-bottom: 0px;} 
+
+.bb0 {margin-left:25px;}
+
+.socialmediaheader { border: 0px solid white;
+                     margin-right:35px; padding:0;
+                     z-index: 36;
+                     position:absolute;
+                     top:2px;
+                     right:0;
+                     width:180px;
+                     height:34px;}
+
+.socialmediaheader  ul { list-style: none;
+						 border:none;}
+.socialmediaheader  li { list-style: none;
+						display:inline;
+						position:relative;
+						padding:0 10px;
+						float:right;
+						border:none;}
+
+.socialmediaheader  li:hover img {
+ filter:Alpha(opacity=75);
+ -moz-opacity:0.75;
+ opacity:0.75; 
+border:none; }
+						
+
+                     
+.donate { width:135px; height:22px;
+		margin-right:35px; padding:0;
+		z-index:37;
+		position:absolute;
+		top:54px;
+		right:10px;
+	 	display:block;
+    	background-image:url(./images/nav/donatebutton1a.png);
+    	background-repeat:none;
+    	background-position:left bottom; /* Position the background sprite accordingly */
+    	cursor:pointer; }
+
+
+.donate:hover { background-position:left top; }
+			
+
+
+
+
+
+/*---shadow start--*/
+.shadow {
+
+-moz-box-shadow: 0px 3px 4px #6E6E6E; 
+
+-webkit-box-shadow: 0px 3px 4px #6E6E6E; 
+
+box-shadow: 0px 3px 4px #6E6E6E; 
+
+/* For IE 8 */
+
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#6E6E6E')";
+
+/* For IE 5.5 - 7 */
+
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#6E6E6E');
+
+}
+
+/*---shadow end---*/
+#menu-bar :focus { outline:0px;}
+
+#menu-bar 
+{ 
+position:absolute;
+top:35px; /*--controls height to red top nav--*/
+width:980px; height: 0px;
+min-width:980px;
+margin: 0px 0px 0px 0px;  
+padding: 59px 0px 0px 0px; /*--space before 1st top menu title--*/ 
+
+line-height: 18px;
+border-radius: 0px;  
+-webkit-border-radius: 0px;  
+-moz-border-radius: 0px;  
+
+background: url(./images/banner/redheader.png); 
+background-repeat:repeat-x; 
+
+z-index: 33;}
+
+#menu-bar li 
+{margin: -59px 0px 0px 0px;  /*--nav titles up/down--*/
+padding:0px 0px 0px 0px;  
+float: left;  position: relative;  
+list-style: none;
+}
+
+#menu-bar li:focus { outline:0px;}
+
+#menu-bar a {  
+font-family: fabersans;  
+font-size:1.0em;
+
+font-style:normal;
+text-decoration: none;
+ 
+color: #E7E5E5;  
+ 
+display: block;  
+padding: 24px 25px 24px 25px;  /*--top menu titles padding, top & bottom must be used in contrast--*/
+margin:0;
+
+position:relative;
+}
+
+#menu-bar .current a, 
+#menu-bar li:hover > a 
+{  background: #1C1C1C;  
+color: #FF0F2F;
+} 
+
+#menu-bar li:focus > a 
+{  outline: 0;} 
+
+#menu-bar ul li:hover a, 
+#menu-bar li:hover li a 
+{  background: none;  border: none;  color: #666;  
+-box-shadow: none;  -webkit-box-shadow: none;  
+-moz-box-shadow: none;
+}
+
+#menu-bar ul a:hover 
+{  background: #1C1C1C !important;  
+color: #FFFFFF !important;  
+border-radius: 0;  
+-webkit-border-radius: 0;  
+-moz-border-radius: 0;  
+text-shadow: 0;
+}
+
+#menu-bar ul a:hover { outline: 0;}
+
+#menu-bar ul {  background: #1C1C1C;  
+display: none;  margin: 0;  
+padding: 0;  width: 174px;  
+position: absolute;  top: 30px;  /*--must match #menu-bar li:hover > ul  margin-top--*/
+left: 0;   
+border-radius: 0px;  
+-webkit-border-radius: 0px;  
+-moz-border-radius: 0px;  
+-webkit-box-shadow: 0px 3px 4px #090909;  
+-moz-box-shadow: 0px 3px 4px #090909;  
+box-shadow: 0px 3px 4px #090909;
+z-index: 9;}
+
+#menu-bar li:hover > ul 
+{  display: block;
+margin-top: 30px; /*--must match #menu-bar ul  position-top--*/
+margin-left:-0.5px;
+z-index: 9;}
+
+#menu-bar li:hover > ul 
+{ outline:0px;}
+
+#menu-bar ul li 
+{  float: none;  
+margin: 0;  
+padding: 0;
+}
+
+#menu-bar ul a 
+{  
+
+padding:10px 0px 10px 0px;  
+color:#999999 !important;  
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 13px; 
+text-indent: 0; 
+z-index: 9;}
+
+
+
+
+
+#menu-bar ul li:first-child > a 
+{  border-top-left-radius: 0px;  
+-webkit-border-top-left-radius: 0px;  
+-moz-border-radius-topleft: 0px;  
+border-top-right-radius: 0px;  
+-webkit-border-top-right-radius: 0px;  
+-moz-border-radius-topright: 0px;
+}
+
+#menu-bar ul li:last-child > a 
+{  border-bottom-left-radius: 0px;  
+-webkit-border-bottom-left-radius: 0px;  
+-moz-border-radius-bottomleft: 0px;  
+border-bottom-right-radius: 0px;  
+-webkit-border-bottom-right-radius: 0px;  
+-moz-border-radius-bottomright: 0px;
+}
+
+#menu-bar:after {  content: ".";  
+display: block;  clear: both;  
+visibility: hidden;  line-height: 0;  
+height: 0;
+}
+
+#menu-bar {  display: inline-block;
+}  
+
+
+#menu-bar {  display: block;
+}
+
+/*****************************Top Navigation End***********************************/
+
+
+
+
+
+/************************Slideshow CSS Start****************************/
+
+				  
+/*------Slide Shadow Start------*/
+.effect6
+{
+  	position:relative;
+-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+
+}
+.effect6:before, .effect6:after
+{
+	content:"";
+    position:absolute;
+    z-index:-1;
+ -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect6:after
+{
+	right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+/*------Slide Shadow  CSS End------*/
+
+				  
+#slide-container {margin: 75px auto 0 auto;
+					width: 82%;
+					height:auto;}
+			  
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 103%;
+  height:auto;
+  padding: 0;
+  margin: 0px auto 0 auto;
+  }
+
+.rslides li {
+  position: absolute;
+  display: none;
+  width: 103%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 103%;
+  border: 0;
+  }
+  
+#slider1 {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  margin-top:78px;
+  height:auto;
+  max-width: 103%;
+  margin: 0px auto 0 auto;
+  border:0px solid blue;}
+  
+/*------------Slideshow end----------------*/
+
+
+
+/***************Carousel Start***********************/
+
+
+/* max width container */
+.container {
+	width: 700px;
+	max-width: 90%;
+
+	margin: 0 auto;
+	background: #eee;
+	border:0;
+	height: 100px;
+}
+
+/* responsive image */
+.img2 {position:relative;
+	max-width: 89%;
+	height: auto;
+	margin-top:76px;
+    margin-left: 15px;
+    }
+
+    
+@media \0screen {
+.img2 img { 
+  	width: 90%; /* for ie 8 */
+  }
+}
+
+/***************Carousel End***********************/
+
+
+
+
+/***************Side Bar Nav Start***********************/
+@font-face {
+    font-family:decker;
+    src: url(./fonts/decker.ttf);
+    src: url(./fonts/decker.eot); 
+    src: url(./fonts/decker-webfont.woff);}
+
+#sidenav p.style1 { font-family: decker; font-size: 0.90em; letter-spacing: 0.1em; color: #fff; margin-top: -10px; padding-top:0px; background:#1c1c1c !important;}
+#sidenav p.style2 { font-family: decker; font-size: 0.90em; letter-spacing: 0.03em; color: #999;
+					line-height: 1.5em; margin-bottom:0; padding-bottom:0;}
+	
+#sidenav { margin-top:50px;
+		   margin-left: 0;
+		   width: 150px;			
+           border: 0px solid #6e6e6e; 
+           z-index: 50;
+           background: #1c1c1c !important;}
+
+#sidenav ul { list-style-type: none;
+              display: block;               
+              margin: 0;
+              border:0;
+              padding: 0px 15px 10px 15px;
+              -webkit-box-shadow: 0px 3px 4px #6E6E6E;  
+              -moz-box-shadow: 0px 3px 4px #6E6E6E;  
+              box-shadow: 0px 3px 4px #6E6E6E; }
+             
+#sidenav ul li { list-style-type: none;
+	             text-decoration: none;
+	             background: #1c1c1c;
+	             padding-left:0;
+	             padding-right:0;
+	             margin-top:-1px;
+	             padding-bottom: 5px;
+	             padding-top: 6px;
+	             border-bottom: 0px;}
+	             
+
+#sidenav ul li a {  font-size: 0.80em;
+                    background: #1c1c1c;
+					color:#000;
+					margin-left: 0px;					
+					margin-left: 0px;
+					margin-top: 0px;
+					padding-bottom:5px; 
+					font-family: fabersans;
+					font-weight:normal;}
+
+#sidenav ul li a.current {color: #ffffff;}  /*sets the current navigation selected from group in sidebar */
+
+
+
+#sidenav a:link    {
+  /* Applies to unvisited links in class mainNav */
+  text-decoration:  none;
+  font-weight:      normal;
+  background-color: transparent;
+  color:            red;
+  }
+
+#sidenav a:visited    {
+  /* Applies to unvisited links in class mainNav */
+  text-decoration:  none;
+  font-weight:      normal;
+  background-color: transparent;
+  color:            red;
+  } 
+
+
+ 
+#sidenav a:hover   {
+  /* Applies to links under the pointer in class mainNav */
+  text-decoration:  none;
+  font-weight:      normal;
+  background-color: #1c1c1c;
+  color:            #fff;
+  
+  } 
+#sidenav a:active  {
+  /* Applies to activated links in class mainNav */
+  text-decoration:  none;
+  font-weight:      normal;
+  background-color: transparent;
+  color:            red;
+  }
+  
+  
+#sidenav ul li:first-child > a 
+{  border-top-left-radius: 0px;  
+-webkit-border-top-left-radius: 0px;  
+-moz-border-radius-topleft: 0px;  
+border-top-right-radius: 0px;  
+-webkit-border-top-right-radius: 0px;  
+-moz-border-radius-topright: 0px;
+}
+
+#sidenav ul li:last-child > a 
+{  border-bottom-left-radius: 0px;  
+-webkit-border-bottom-left-radius: 0px;  
+-moz-border-radius-bottomleft: 0px;  
+border-bottom-right-radius: 0px;  
+-webkit-border-bottom-right-radius: 0px;  
+-moz-border-radius-bottomright: 0px;
+}
+
+#sidenav li:hover > ul 
+{  display: block;
+margin-top: 25px; /*--must match #menu-bar ul  position-top--*/
+margin-left:-0.5px;
+}
+
+#sidenav:after {  content: ".";  
+display: block;  clear: both;  
+visibility: hidden;  line-height: 0;  
+height: 0;
+}
+ 	
+/***************Side Bar Nav End*****************************************************/
+
+
+
+
+
+/*=======================Area Containing Columns Start========================*/
+#inner { 
+    width:100%;/*haslayout*/
+    padding-bottom:150px; /*preserve footer space (plus 10px for text spacing)*/
+    background:#fff;/*set same as wrapper BG or none at all*/
+    border-bottom:0px dashed red;
+}
+#left {
+	
+	margin: 0 auto; /*--keeps text within the column--*/
+	padding:0px;
+    float:left;
+    width:50%; /*--controls width left column (FAUX width must be same)--*/
+    border:0px solid red;/*this is just for #right to reference it's overflow point from*/
+    background:#fff;/*be sure to set this same color on the #faux div*/
+    position:relative;
+    z-index:4;/*layer it above the #faux column*/
+}
+
+
+
+
+#right{ 
+	margin:0 auto;
+    overflow:hidden;/*keep all elements from sliding under floated #left col(IE7 haslayout also)*/
+    background:#fff;/*this needs to be the same as #wrapper bg color (or remove it completely)*/
+    border-top: 0px solid #b4b4b4;}
+
+* html #left{margin-right:0px;}/*kill IE6 3px jog*/
+* html #right {/*IE6 haslayout and overflow reset*/
+    height:1%;
+    overflow:visible;
+}
+
+
+/*=== This #faux div gives full height color and border to the left column ===*/
+#faux {
+	
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:50%; /*--must be same as LEFT width--*/
+    height:100%;
+    background:#fff;/*be sure to set this same color on the #left div*/
+    z-index:-4000;
+    border-right:0px solid green; /*--middle border--*/}
+    
+    
+
+
+#footer {
+	width:980px;
+    min-width:980px;
+    position:relative;/*establish stacking order for z-index*/
+    z-index:5;/*layer it above the #faux column*/
+    clear:both;
+    height:180px;
+    margin:-140px auto 0;/*pull footer back into viewport with negative top margin*/
+    padding-bottom: 100px;
+    border-top:none;
+    text-align:center;
+    /*---Footer Background Color Gradient---*/   
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#272727, endColorstr=#272727);  
+    background: -webkit-gradient(linear, left top, left bottom, from(#272727), to(#272727));  
+    background: -moz-linear-gradient(top,  #272727,  #272727);  border: solid 0px #6D6D6D;
+    }
+   
+
+
+
+/*footer nav area 1*/            
+
+#footer-layout-slicing-09 
+{   position:relative;
+	float: left;
+	margin: 28px 0 0 50px;
+	width:100px;
+	height:105px; 
+	border: 0px solid #ff0000; }
+
+#footer-layout-slicing-09 ul
+{   list-style-type: none;
+	margin-top: 0px; 
+	margin-left: 0px;
+	padding-left: 0px; 
+	text-align: left;}
+
+#footer-layout-slicing-09 a
+{   text-decoration: none; 
+	color: #6d6d6d;
+	font-family: Candara, sans-serif;
+	font-size: 100%; 
+	text-align: left;}
+
+/*footer nav area 2*/  
+
+#footer-layout-slicing-10 
+{ position:relative;
+	float: left;
+	margin: 27px 0 0 40px;
+	width:250px;
+	height:120px; 
+	border: 0px solid black;}
+
+#footer-layout-slicing-10 ul
+{   list-style-type: none;
+	margin-top: 0px; 
+	margin-left: 0px;
+	padding-left: 0px; 
+	text-align:left;}
+	
+#footer-layout-slicing-10 a
+{ text-decoration: none; 
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	font-weight: 100;  
+	line-height: 90%;
+	text-align: left;
+	margin-left:0;}
+
+#footer-layout-slicing-10 p
+{ text-decoration: none; 
+	color: #6d6d6d;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	font-weight:100; 
+	line-height: 120%;
+	text-align: left;}
+
+#footer-layout-slicing-10 p.style2
+{   text-decoration: none; 
+	color: #6d6d6d;
+	font-family: Candara, sans-serif;
+	font-size: 110%; 
+	text-align: left;}
+	
+/*footer nav area 3*/  
+
+#footer-layout-slicing-11 
+{ position:relative;
+	float: left;
+	margin: 17px 0 0 40px;
+	width:250px;
+	height:120px; 
+	border: 0px solid black;}
+
+#footer-layout-slicing-11 ul
+{   list-style-type: none;
+	margin-top: 0px; 
+	margin-left: 0px;
+	padding-left: 0px; 
+	text-align:left;}
+	
+#footer-layout-slicing-11 a
+{ text-decoration: none; 
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	font-weight: 100;  
+	line-height: 90%;
+	text-align: left;
+	margin-left:0;}
+
+#footer-layout-slicing-11 p
+{ text-decoration: none; 
+	color: #6d6d6d;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	font-weight:100; 
+	line-height: 120%;
+	text-align: left;}
+
+
+
+
+           
+
+				
+
+/*-- Form--*/
+#formEmail p {
+	text-decoration: none; 
+	color: #6d6d6d;
+	font-family: Candara, sans-serif;
+	font-size: 110%; 
+	text-align: left;}
+
+#formEmail { position:relative;
+	float: left;
+	margin: 27px 0 0 60px;
+	padding-left: 0px;
+	width:400px;
+	height:200px; 
+	border: 0px solid black;}
+
+form { background-color:none;
+	font-family: Verdana;
+	font-size: 0.80em;
+	width: 400px; 
+    padding: 0px;	
+    color: #6d6d6d;}
+
+label { float: left;
+	width: 70px; 
+	display: block; 
+	clear: left;
+	text-align: left; 
+	padding:2px;
+	margin:0; 
+	vertical-align: middle;
+	
+	
+	}
+
+input, textarea { margin: 10px  0 10px 0;
+                  padding-top:0px; 
+                  display: block;
+                  resize:none;
+                  vertical-align:top;
+                  background: #ccc;} 
+.textfield {
+ font-family: Candara, sans-serif;
+ letter-spacing: 0.1em;
+ font-size: 1.0em;
+ color: #444;
+ text-decoration: none;
+ background-color: #ccc;
+ border: ridge 2px solid #6d6d6d;}
+
+
+
+button { height: 20px;
+         margin:-2px;
+         padding:-2px;}
+
+.mysubmit { margin-left: 75px;
+            color:transparent;
+			width: 63px; height:20px;
+			display:block;
+            background-image:url(./images/content/sendbutton1.png);
+            background-repeat: no-repeat;
+            
+    	    cursor:pointer; 
+    	    filter:Alpha(opacity=75);
+		    -moz-opacity:0.75;
+		    opacity:0.75; 
+		    border:none; }
+             
+.mysubmit:hover { color:transparent;
+                  
+		          filter:Alpha(opacity=100);
+		          -moz-opacity:1.00;
+		          opacity:1.00; 
+		          border:none;} 
+
+.copyright { text-align: center;
+             clear:both;
+             height:40px;
+             background-color: transparent;
+             width:100%;
+             font-size:0.70em;
+             font-family:Verdana;
+             color:#6d6d6d; }
+
+</style>
+</head>
+
+
+
+
+
+<body>  
+
+<div id="wrapper"> <!--start Outside wrapper-->   
+
+<!--header start--->
+<script type="text/javascript">showHeader(header_navigation);</script>
+<!--header end--->
+
+
+
+
+<div style="margin-top: -5px;"><!-------Area Contains Overlapped Side Bar Nav Start-------->
+
+
+<!-----Side Nav Bar Start----->
+<div id="sidenav" style="z-index:50;  float: right; position: absolute;  top:355px; margin-right: 4%; right: 0">
+					<script type="text/javascript">showNav(navigation_side);</script>
+				</div><!-- sidenav end -->
+
+</div><!-------Area Contains Overlapped Side Bar Nav End-------->
+
+
+
+
+<!------------------------Bottom Columns Start------------------>
+
+ 
+    <div id="inner">
+        <div id="left">
+      <!---Slideshow Start---->  	 
+         <div class="effect6" id="slide-container" style="border:0px dashed black;">
+        	<ul class="rslides" id="slider1">
+  				<li><img src="./slideshow/photo1.png" alt="" /></li>
+  				<li><img src="./slideshow/photo2.png" alt="" /></li>
+  				<li><img src="./slideshow/photo3.png" alt="" /></li>
+  				<li><img src="./slideshow/photo4.png" alt="" /></li>
+  				<li><img src="./slideshow/photo5.png" alt="" /></li>
+			</ul>	
+		  </div>
+      <!---Slideshow End---->     
+              
+              
+              
+              
+        	  <br>
+        	  <br>
+        	  <br>
+        	  <br>
+              <hr class="style-one_a">
+              <h2 class="h2styleleft">LATEST NEWS</h2>
+              <hr class="style-one_b">
+              
+              
+              <p class="pstyleleft"> 
+              <img class="imgstyleleft" src="./images/content/placeholder1.png" width=35%> 
+              	<b style="font-size:1.0em; font-weight:600; font-family:Verdana; text-transform: uppercase;">"Are We Rolling?"</b>
+              	 <br>
+              	 <br>
+                 Three or four days a week, students from public schools across Greater New Haven arrive at the 
+                 studios of Youth Rights Media (YRM) for a three-hour, intensive, afterschool program. Sitting 
+                 around a large table in the color-splashed, loft-like studio on Willow Street, 
+                 in the East Rock section, they snak on pretzels and cocoa and talk documentary: 
+                 shooting, editing, battery life and memory cards before getting to work.
+
+              </p>
+               
+              
+              
+              <br>
+              <br>
+              <hr class="style-one_a">
+              <h2 class="h2styleleft">OUR AWARDS</h2>
+              <hr class="style-one_b">
+              
+              
+              
+              <ul class="pstyleleft" style="list-style: none">
+              	
+              	<li > <span class="pstyleleft2"><b><i>2008</i></b></span> Champion in Action, Citizens Bank</li>
+              	<li> <span class="pstyleleft2"><b><i>2007</i></b></span>  Reebok Human Rights Award - Executive Director, <br> <div style="margin-left: 32px;">Laura McCargar</div></li>
+              	<li> <span class="pstyleleft2"><b><i>2006</i></b></span>  Revolutionary Visionary Award, Arts Council of <br> <div style="margin-left: 32px;">Greater New Haven</div></li>
+              	<li> <span class="pstyleleft2"><b><i>2006</i></b></span>  Audience Choice Award, Wesport Youth Film Festival</li>
+              	<li> <span class="pstyleleft2"><b><i>2006</i></b></span>  Criminal Justice Award, Media That Matters</li>
+              	<li> <span class="pstyleleft2"><b><i>2006</i></b></span>  Best Documentary, Westport Youth Film Festival</li>
+              	<li> <span class="pstyleleft2"><b><i>2004</i></b></span>  Youth Media Activism Award, Hartford Independent <br> <div style="margin-left: 32px;">Media Center</div></li>
+              	<li> <span class="pstyleleft2"><b><i>2002</i></b></span>  Winner, Yale Entrepreneurial Society Y50K Competition</li>
+              	
+              </ul>
+              
+            
+        </div><!--end left-->
+        
+        <div id="right"><!--Start Right Column-->
+        	 
+        	        <!--Carousel Start-->	 
+		                     <div id="wrapperbox">
+		                        <div id="wrappers">
+			                     <a id="prev"> </a>     
+			                      <div id="carousel">
+<!--Do Not Remove The Style--><a style="margin-left:-12px;" href="http://www.youtube.com/watch?v=EM-ChH0EDMY"><img src="./videothumbs/image0.png" alt="video1" width="160" height="160" /></a>
+				  <a href="http://www.youtube.com/watch?v=T5tQ48LGLzg&feature=plcp"><img src="./videothumbs/image1.png" alt="video2" width="160" height="160" /></a>
+				  <a href="http://www.youtube.com/watch?v=C9a65-Vzar4&feature=relmfu"><img src="./videothumbs/image2.png" alt="video3" width="160" height="160" /></a>
+				  <a href="http://www.youtube.com/watch?v=FrC9XyRogUk&feature=plcp"><img src="./videothumbs/image3.png" alt="video4" width="160" height="160" /></a>
+				  <a href="http://www.youtube.com/watch?v=VCzEt6U84nA&feature=plcp"><img src="./videothumbs/image4.png" alt="video5" width="160" height="160" /></a>
+				  <a href="http://www.youtube.com/watch?v=4cLuayjWxyc&feature=plcp"><img src="./videothumbs/image5.png" alt="video6" width="160" height="160" /></a>
+				  <a href="http://www.youtube.com/watch?v=qW83cvoC2fg"><img src="./videothumbs/image7.png" alt="video7" width="160" height="160" /></a>
+				  <a href="http://www.youtube.com/watch?v=9M31v0kXR2E"><img src="./videothumbs/image8.png" alt="video8" width="160" height="160" /></a>
+				  <a href="http://www.youtube.com/watch?v=oWOJC9gLCMY"><img src="./videothumbs/image9.png" alt="video9" width="160" height="160" /></a>
+				  <a href="http://www.youtube.com/watch?v=gM9iqtcooFw"><img src="./videothumbs/image10.png" alt="video10" width="160" height="160" /></a>
+			                      </div><!--end of carousel-->
+			                     </div><!--end of wrappers--> 
+			                    <a id="next"> </a>
+		                    </div><!--end of wrapperbox-->
+                   <!--Carousel Start-->	
+        	 
+         
+                   
+                    <figure >
+	                      <img class="img2 effect6" src="./slideshow/carousel.png" alt="#" >
+                    </figure>
+             
+
+
+        	
+          
+        	 
+          <div style="overflow:auto; width: 92%; border:0px dashed red; height:100%;">
+          	
+          	
+          	
+        	    <div class="floatLeft"> 
+        	 	<img src="./images/content/imageblock1.PNG" style=" float:right; width:135px; height:220px; border:0px solid blue; margin-right: 0px; padding: 0  0 15px 30px">
+        	 	
+        	 	<div> 
+        	  
+        	  <br>
+        	  <br>
+        	  <br>
+        	  <hr class="style-two_a">
+              <h2 class="h2styleright">SUPPORT</h2>
+              <hr class="style-two_b"></div>
+                
+        	 	<p class="pstyleright">
+        	 	<img class="imgstyleright" src="./images/content/placeholder3.png" width=35%> 
+        	 	
+        	 	<b style="font-size:1.0em; font-weight:600; font-family:Verdana; text-transform: uppercase;">Local Campaigns</b>
+                
+                
+                <br>
+                <br>
+                One of the principal purposes of this site is to offer tools to grassroots organizers, community organizations, parents, students, and others who seek to mount a campaign against the criminalization of youth in their schools. While each community is different, and the schoolhouse to jailhouse track might not be the same in every place, we have found that the successes, failures, and lessons learned from past campaigns can be helpful in pushing for reform elsewhere. 
+                <br>
+                <br> 
+                A <a href="http://www.stopschoolstojails.org/node/37">Map</a> showing where groups are already involved in advocacy and action to combat the schoolhouse to jailhouse track.
+                <br>
+                <br>
+                   
+                     
+        	    <hr class="style-two_a">
+                <h2 class="h2styleright">EVENTS</h2>
+                <hr class="style-two_b">
+             
+                        	
+              	<p class="pstyleright">
+              	<img src="./images/content/placeholder2.png" width=100%>
+              	<br> 
+              	<br>
+              	<span class="uppercasestyle">P</span> lease join us Thursday, February 4th, from 6-7:30pm, at our space on 77 Willow Street, 2nd fl., in New Haven, 
+              	as we showcase the short documentary and other new work created by young people in our fall Media Arts program. 
+              	Youth from YRM’s Intro. to Film, Advanced Film and Music workshops will be on hand to share and discuss their 
+              	media creations. Refreshments will be served. Hope to see you here!
+                </p>    	
+                 
+              
+          </div><!--clearboth-->
+              
+              
+           <div style="width: 92%; border:px dashed red; height:100%;"><!--Do Not Remove-->
+              
+           
+           </div><!--Do Not Remove-->    	
+              	
+             
+              
+              	
+              
+            
+        </div><!--end right-->          
+    </div><!--end inner-->
+     
+<div id="faux"> </div><!--100% height BG and Border for left column-->
+</div> <!--end Outside wrapper-->          
+    
+<div id="footer"><!--footer sits outside of wrapper--> 
+   <script type="text/javascript">showFooter(footer);</script>
+    
+ 
+</div> <!-- end footer -->
+
+</body>
+</html>

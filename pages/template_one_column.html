@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Youth Rights Media</title>
+
+<!-- location of external stylesheet-->
+<link rel="stylesheet" href="../css/site.css" media="screen">
+<!-- location of javascript files -->
+<script type="text/javascript" src="../scripts/header.js"></script>
+<script type="text/javascript" src="../scripts/footer.js"></script>
+<!-- The following causes IE 8 and earlier to correctly render HTML5 code -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+
+<style type="text/css">
+/*------Area Containing Columns Start-------*/
+
+.samplearea { 
+width:90%;
+background: none;
+margin:65px auto 50px auto;
+padding:0;}
+
+#inner { 
+    width:100%;/*haslayout*/
+    padding-bottom:150px; /*preserve footer space (plus 10px for text spacing)*/
+    background:#fff;/*set same as wrapper BG or none at all*/
+    border-bottom:0px dashed red;
+}
+#left {
+	margin: -5px auto 0 auto; /*--keeps text within the column--*/
+	padding:0px;
+    float:left;
+    width:100%; /*--controls width left column (FAUX width must be same)--*/
+    border:0px solid red;/*this is just for #right to reference it's overflow point from*/
+    background:#fff;/*be sure to set this same color on the #faux div*/
+    position:relative;
+    z-index:4;/*layer it above the #faux column*/
+}
+
+#right{ 
+	margin:0 auto;
+    overflow:hidden;/*keep all elements from sliding under floated #left col(IE7 haslayout also)*/
+    background:#fff;/*this needs to be the same as #wrapper bg color (or remove it completely)*/
+    border-top: 0px solid #b4b4b4;}
+
+* html #left{margin-right:0px;}/*kill IE6 3px jog*/
+* html #right {/*IE6 haslayout and overflow reset*/
+    height:1%;
+    overflow:visible;
+}
+
+
+
+div.floatLeft { margin-top:20px;
+	            float: left;
+				border: 0px dashed red;}
+				
+
+
+</style>
+
+</head>
+<body onload="">  
+
+<div id="wrapper"> <!--start Outside wrapper-->   
+
+
+<!--header start--->
+<script type="text/javascript">showHeader(header_navigation);</script>
+
+<!--header end--->
+
+
+
+
+
+<!------------------------Bottom Columns Start------------------>
+
+ 
+    <div id="inner">
+        <div id="left">
+      <!---Slideshow Starts Here (Do Not Remove)---->  	 
+         <div  id="slide-container" style="border:0px dashed black;">
+        	
+		  </div>
+      <!---Slideshow Ends Here (Do Not Remove)---->     
+              
+              <!-- Main Content Start Here-->
+              <div class="samplearea">
+        	  
+             <img src="../images/content/samplecontent.png" width="100%" height="500">
+             
+             
+             
+             
+           
+              </div>
+              <!--Main Content End Here-->
+            
+        </div><!--end left-->
+        
+        <div id="right"><!--Start Right Column-->
+        	 
+        	 
+        	 
+                    
+             
+               
+              
+              
+              
+             
+              
+                	
+              	
+             
+              
+              	
+              
+            
+        </div><!--end right-->          
+    </div><!--end inner-->
+     
+<div id="faux"> </div><!--100% height BG and Border for left column-->
+</div> <!--end Outside wrapper-->          
+    
+<div id="footer"><!--footer sits outside of wrapper--> 
+    <script type="text/javascript">showFooter(footer);</script>
+    
+    
+<div id="formEmail">
+
+		    <p>Email Us</p>
+            
+			<form method="post" action="http://webdevbasics.net/scripts/contact.php">
+ 			 <label for="myName">Name:</label>
+  			 <input type="text" name="myName" id="myName" class="textfield">
+  			 <label for="myEmail">E-mail:</label>
+  			 <input type="text" name="myEmail" id="myEmail" class="textfield">
+  			 <label for="myMessage">Message:</label>
+  			 <textarea name="myComments" id="myComments" rows="2" cols="20" class="textfield"> </textarea>
+  			 <input id="mySubmit" type="submit" value="Send" >
+			</form>	
+</div> <!--form end-->
+
+    
+</div> <!-- end footer -->
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+
+			
+			
+			#wrapperbox { height: 200px; width:436px;
+			background: #fff;
+            position:absolute;
+            
+            top: 170px;
+            right: 0px;
+            z-index:50;
+            border: 0px dashed white;
+            margin-right:3.9%;
+            float: right; 
+            z-index: 1;}
+
+			#wrappers{
+				border:0px;
+				height: 200px;
+				position: absolute;
+				background: #000;}
+				
+				
+			
+			#wrappers {
+				width: 436px;
+				overflow: hidden;
+				box-shadow: none;
+				border: 0px solid blue;
+			}
+			
+			#carousel { margin-left: 30px;
+			width:1000px;
+			height:180px;
+			padding:0px;
+			border: 0px solid red;
+			}
+
+			#carousel a {
+				padding-top:20px;
+				padding-left:0px;
+				padding-right:0px;
+				margin-left:-5px;
+				margin-right:5px; /*--adds more videos inward from the right--*/
+				border: 0;
+				width:180px; /*--image spacing--*/ /*--control width in the html not here in the css--*/
+				display: inline;
+				float: left; 
+			    border-style:none;}
+			 
+			 #carousel img { border:0px;
+			                 border-style:none;} 
+			
+			
+			
+			#prev:hover, #next:hover {
+				background-color: #fff; height: 200px;
+				
+			}
+			
+			#prev {height: 200px;
+				position: absolute;
+				background: center center no-repeat #2e2e2e;
+				width: 5%;
+				background-image: url( ./videothumbs/cl.png );
+				left: 0;  top:0px; border: 0px solid #ddd;
+			}
+			
+			#next {height: 200px;
+				position: absolute;
+				background: center center no-repeat #2e2e2e;
+				width: 5%;
+				background-image: url( ./videothumbs/cr.png );
+				right: 0; top:0px; border: 0px solid #ddd; 
+			}
+			
+			
+		

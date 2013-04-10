@@ -1,0 +1,732 @@
+/* Revised 12/10/12 */
+/**/
+/*****************************Common****************************************/
+
+* html #faux {height:999em;}/*IE6 does not support 100% height on AP elements*/
+code {color:none;}
+
+* {margin:0;padding:0;}
+
+html, body {height:100%;}
+
+body {background:#BFBFBF;}
+
+html, body, div, span, object, iframe img, a, :focus{ outline: 0;} /*--Removes onclick dotted borders in IE---*/
+
+/*=== Float Containment and Bug Fixes (Do Not Alter These!) ===*/
+body:before {/*Opera min-height 100% Fix (Kohoutec)*/
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;/*eliminate need for inner non clearing element (Erik.J)*/
+}
+#wrapper:after,  /* #wrapper:after for IE8 min-height:100% Fix*/
+#inner:after { /* #inner:after for Float Containment*/
+    clear:both;
+    content:"";
+    display:block;
+    height:1%;/*fix IE8 min-height:100% bug (Erik.J)*/
+    font-size:0;
+    }
+
+/*===  Begin Layout Structure ===*/
+
+#wrapper { 
+	    margin: 0 auto;
+	    width:980px;
+    	min-width:980px;/*repeat this rule on the footer*/
+    	min-height:100%; /*height is determined from parent's height (html & body)*/   
+   	    background:#fff;/*this needs to be the same as #right bg color*/
+    	position:relative; /*establish containing block for AP #faux div*/
+    	}
+
+* html #wrapper {height:100%;} /*IE6 treats height as min-height*/ 
+
+.navwrapper {border: 0px solid green;
+              margin-left: 15%;
+              }
+
+.headerwrapper {width:100%; min-width:980px;
+		height:100px;
+		z-index: 35;}
+
+.blackheader {width: 100%; min-width:980px;
+		height:35px;
+		background: #000000;
+		position: relative;		
+		margin:0 0 105px 0; padding:0; /*---pushing first or contents up or down--*/
+		z-index:33;}
+
+
+/*****************************Fonts****************************************/
+
+@font-face {
+font-family: Imprima;
+src: url(../fonts/Imprima.ttf);
+src: url(../fonts/Imprima.otf);}
+
+
+@font-face {
+font-family: Cantata-one;
+src: url(../fonts/Cantata-one.ttf);
+src: url(../fonts/Cantata-one.otf);}
+
+@font-face {
+font-family: fabersans;
+src: url(../fonts/FaberSansPro65reduced.ttf);
+src: url(../fonts/FaberSansPro65reduced.otf);}
+
+@font-face {
+font-family: geosans;
+src: url(../fonts/GeosansLight.ttf);}
+
+
+/*----Section Title Horizontal Lines---*/
+
+/*--Horizontal Lines For Left Column--*/
+hr.style-one_a { 
+	border: 0;
+	margin-left: 10%;
+	margin-right: 7%; 
+	padding:0px;
+	height:2px;
+	background: url(../images/content/hrline2.png);
+	background-repeat:no-repeat;}
+hr.style-one_b { 
+	border: 0;
+	margin-top:-2px;
+	margin-left: 10%;
+	margin-right: 7%; 
+	padding:0px;
+	height:4px;
+	background: url(../images/content/hrline3.png);
+	background-repeat:no-repeat;}
+
+/*--Horizontal Lines For Right Column--*/
+hr.style-two_a { 
+	border: 0;
+	margin-left: 2.5%; 
+	margin-right: 0;
+	padding:0px;
+	height:2px;
+	background: url(../images/content/hrline2.png);
+	background-repeat:no-repeat;}
+
+hr.style-two_b { 
+	border: 0;
+	margin-top:-2px;
+	margin-left: 3%; 
+	margin-right: 0;
+	padding:0px;
+	height:4px;
+	background: url(../images/content/hrline3.png);
+	background-repeat:no-repeat;}
+
+/*---Fonts Styles For Left and Right Columns: Note Left and Right are Different---*/
+	
+.h2styleleft { font-family: fabersans;
+           text-transform:uppercase;  
+		   font-size: 0.95em; 
+		   font-weight: normal; 
+		   color:#D81A21;
+		   margin-left:2%; 
+		   padding:1px 40px 0px 40px;
+		   
+		  }
+
+
+.h2styleright { font-family: fabersans;
+           text-transform:uppercase;  
+		   font-size: 0.95em; 
+		   font-weight: normal; 
+		   color:#D81A21;
+		   margin-left:3%; 
+		   padding:1px 0 0 0;
+		   }
+
+.pstyleleft {font-family: Verdana;
+		font-size: 0.70em;
+		line-height: 1.5em;
+		letter-spacing: 0;
+		word-spacing: normal;
+		text-decoration: none;
+		color: #444;
+		background-color: #fff;
+		margin-left: 2%;
+		padding:10px 40px 10px 40px;}
+
+.pstyleleft2 { font-family: Candara, sans-serif;
+		font-size: 1.2em;
+		line-height: 1.5em;
+		letter-spacing: 0;
+		word-spacing: normal;
+		text-decoration: none;
+		color: #444;
+		background-color: #fff;
+		margin-left:0;
+		padding:0;}		
+
+.pstyleleft3 { font-family: Verdana;
+		font-size: 0.85em;
+		line-height: 1.5em;
+		letter-spacing: 0;
+		word-spacing: normal;
+		text-decoration: none;
+		color: #444;
+		background-color: #fff;
+		margin-left: 2%;
+		padding:10px 40px 10px 40px;}
+
+.pstyleright { font-family: Verdana;
+		font-size: 0.70em;
+		line-height: 1.5em;
+		letter-spacing: 0;
+		word-spacing: normal;
+		text-decoration: none;
+		color: #444;
+		background-color: #fff;
+		margin-left: 0%;
+		padding:10px 40px 10px 15px;}
+
+
+
+/***************Side Bar Nav Start***********************/
+@font-face {
+    font-family:decker;
+    src: url(./fonts/decker.ttf);
+    src: url(./fonts/decker.eot); 
+    src: url(./fonts/decker-webfont.woff);}
+
+#sidenav p.style1 { font-family: decker; font-size: 0.90em; letter-spacing: 0.1em; color: #fff; margin-top: -10px; padding-top:0px; background:#1c1c1c !important;}
+#sidenav p.style2 { font-family: decker; font-size: 0.90em; letter-spacing: 0.03em; color: #999;
+					line-height: 1.5em; margin-bottom:0; padding-bottom:0;}
+	
+#sidenav { margin-top:50px;
+		   margin-left: 0;
+		   width: 150px;			
+           border: 0px solid #6e6e6e; 
+           z-index: 50;
+           background: #1c1c1c !important;}
+
+#sidenav ul { list-style-type: none;
+              display: block;               
+              margin: 0;
+              border:0;
+              padding: 0px 15px 10px 15px;
+              -webkit-box-shadow: 0px 3px 4px #6E6E6E;  
+              -moz-box-shadow: 0px 3px 4px #6E6E6E;  
+              box-shadow: 0px 3px 4px #6E6E6E; }
+             
+#sidenav ul li { list-style-type: none;
+	             text-decoration: none;
+	             background: #1c1c1c;
+	             padding-left:0;
+	             padding-right:0;
+	             margin-top:-1px;
+	             padding-bottom: 5px;
+	             padding-top: 6px;
+	             border-bottom: 0px;}
+	             
+
+#sidenav ul li a {  font-size: 0.80em;
+                    background: #1c1c1c;
+					color:#000;
+					margin-left: 0px;					
+					margin-left: 0px;
+					margin-top: 0px;
+					padding-bottom:5px; 
+					font-family: fabersans;
+					font-weight:normal;}
+
+#sidenav ul li a.current {color: #ffffff;}  /*sets the current navigation selected from group in sidebar */
+
+
+
+#sidenav a:link    {
+  /* Applies to unvisited links in class mainNav */
+  text-decoration:  none;
+  font-weight:      normal;
+  background-color: transparent;
+  color:            red;
+  }
+
+#sidenav a:visited    {
+  /* Applies to unvisited links in class mainNav */
+  text-decoration:  none;
+  font-weight:      normal;
+  background-color: transparent;
+  color:            red;
+  } 
+
+
+ 
+#sidenav a:hover   {
+  /* Applies to links under the pointer in class mainNav */
+  text-decoration:  none;
+  font-weight:      normal;
+  background-color: #1c1c1c;
+  color:            #fff;
+  
+  } 
+#sidenav a:active  {
+  /* Applies to activated links in class mainNav */
+  text-decoration:  none;
+  font-weight:      normal;
+  background-color: transparent;
+  color:            red;
+  }
+  
+  
+#sidenav ul li:first-child > a 
+{  border-top-left-radius: 0px;  
+-webkit-border-top-left-radius: 0px;  
+-moz-border-radius-topleft: 0px;  
+border-top-right-radius: 0px;  
+-webkit-border-top-right-radius: 0px;  
+-moz-border-radius-topright: 0px;
+}
+
+#sidenav ul li:last-child > a 
+{  border-bottom-left-radius: 0px;  
+-webkit-border-bottom-left-radius: 0px;  
+-moz-border-radius-bottomleft: 0px;  
+border-bottom-right-radius: 0px;  
+-webkit-border-bottom-right-radius: 0px;  
+-moz-border-radius-bottomright: 0px;
+}
+
+#sidenav li:hover > ul 
+{  display: block;
+margin-top: 25px; /*--must match #menu-bar ul  position-top--*/
+margin-left:-0.5px;
+}
+
+#sidenav:after {  content: ".";  
+display: block;  clear: both;  
+visibility: hidden;  line-height: 0;  
+height: 0;
+}
+ 	
+/***************Side Bar Nav End*****************************************************/
+
+/************************ Start Banner and top navigation Area **********************/
+
+.socialmediaheader { border: 0px solid white;
+                     margin-right:35px; padding:0;
+                     z-index: 36;
+                     position:absolute;
+                     top:2px;
+                     right:0;
+                     width:180px;
+                     height:34px;}
+
+.socialmediaheader  ul { list-style: none;
+			 border:none;}
+
+.socialmediaheader  li { list-style: none;
+			display:inline;
+			position:relative;
+			padding:0 10px;
+			float:right;
+			border:none;}
+
+.socialmediaheader li:hover img {
+		 filter:Alpha(opacity=75);
+		 -moz-opacity:0.75;
+		 opacity:0.75; 
+		border:none; }
+
+
+                     
+                     
+.donate { width:135px; height:22px;
+		margin-right:35px; padding:0;
+		z-index:37;
+		position:absolute;
+		top:54px;
+		right:10px;
+	 	display:block;
+    	background-image:url(../images/nav/donatebutton1a.png);
+    	background-repeat:none;
+    	background-position:left bottom; /* Position the background sprite accordingly */
+    	cursor:pointer; }
+
+
+.donate:hover { background-position:left top; }
+
+
+.donate a {display: block;
+	   width:135px;
+	   height:24px;
+	   outline: none;}
+
+.donate a span {display: none;}
+
+
+
+
+
+
+#menu-bar :focus { outline:0px;}
+
+#menu-bar 
+{ 
+position:absolute;
+top:35px; /*--controls height to red top nav--*/
+width:980px; height: 0px;
+min-width:980px;
+margin: 0px 0px 0px 0px;  
+padding: 59px 0px 0px 0px; /*--space before 1st top menu title--*/ 
+
+line-height: 18px;
+border-radius: 0px;  
+-webkit-border-radius: 0px;  
+-moz-border-radius: 0px;  
+
+background: url(../images/banner/redheader.png); 
+background-repeat:repeat-x; 
+
+z-index: 33;}
+
+#menu-bar li 
+{margin: -59px 0px 0px 0px;  /*--nav titles up/down--*/
+padding:0px 0px 0px 0px;  
+float: left;  position: relative;  
+list-style: none;
+}
+
+#menu-bar li:focus { outline:0px;}
+
+#menu-bar a {  
+font-family: fabersans;  
+font-size:1.0em;
+
+font-style:normal;
+text-decoration: none;
+ 
+color: #E7E5E5;  
+ 
+display: block;  
+padding: 24px 25px 24px 25px;  /*--top menu titles padding, top & bottom must be used in contrast--*/
+margin:0;
+
+position:relative;
+}
+
+#menu-bar .current a, 
+#menu-bar li:hover > a 
+{  background: #1C1C1C;  
+color: #FF0F2F;
+} 
+
+#menu-bar li:focus > a 
+{  outline: 0;} 
+
+#menu-bar ul li:hover a, 
+#menu-bar li:hover li a 
+{  background: none;  border: none;  color: #666;  
+-box-shadow: none;  -webkit-box-shadow: none;  
+-moz-box-shadow: none;
+}
+
+#menu-bar ul a:hover 
+{  background: #1C1C1C !important;  
+color: #FFFFFF !important;  
+border-radius: 0;  
+-webkit-border-radius: 0;  
+-moz-border-radius: 0;  
+text-shadow: 0;
+}
+
+#menu-bar ul a:hover { outline: 0;}
+
+#menu-bar ul {  background: #1C1C1C;  
+display: none;  margin: 0;  
+padding: 0;  width: 174px;  
+position: absolute;  top: 30px;  /*--must match #menu-bar li:hover > ul  margin-top--*/
+left: 0;   
+border-radius: 0px;  
+-webkit-border-radius: 0px;  
+-moz-border-radius: 0px;  
+-webkit-box-shadow: 0px 3px 4px #090909;  
+-moz-box-shadow: 0px 3px 4px #090909;  
+box-shadow: 0px 3px 4px #090909;
+z-index: 9;}
+
+#menu-bar li:hover > ul 
+{  display: block;
+margin-top: 30px; /*--must match #menu-bar ul  position-top--*/
+margin-left:-0.5px;
+z-index: 9;}
+
+#menu-bar li:hover > ul 
+{ outline:0px;}
+
+#menu-bar ul li 
+{  float: none;  
+margin: 0;  
+padding: 0;
+}
+
+#menu-bar ul a 
+{  
+
+padding:10px 0px 10px 0px;  
+color:#999999 !important;  
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 13px; 
+text-indent: 0; 
+z-index: 9;}
+
+
+
+
+
+#menu-bar ul li:first-child > a 
+{  border-top-left-radius: 0px;  
+-webkit-border-top-left-radius: 0px;  
+-moz-border-radius-topleft: 0px;  
+border-top-right-radius: 0px;  
+-webkit-border-top-right-radius: 0px;  
+-moz-border-radius-topright: 0px;
+}
+
+#menu-bar ul li:last-child > a 
+{  border-bottom-left-radius: 0px;  
+-webkit-border-bottom-left-radius: 0px;  
+-moz-border-radius-bottomleft: 0px;  
+border-bottom-right-radius: 0px;  
+-webkit-border-bottom-right-radius: 0px;  
+-moz-border-radius-bottomright: 0px;
+}
+
+#menu-bar:after {  content: ".";  
+display: block;  clear: both;  
+visibility: hidden;  line-height: 0;  
+height: 0;
+}
+
+#menu-bar {  display: inline-block;
+}  
+
+
+#menu-bar {  display: block;
+}
+
+
+/*------Used to control spacing of list items <li> in drop down menu --*/ 
+
+.bb {border-bottom: 0px solid #333;
+     float: none;  
+     margin-left:25px;
+     margin-right: 25px;
+     padding-right:2%;
+     padding-bottom: 10px;}
+
+/*------Used only on last list item in drop down menu, it ensures no border is displayed ---*/
+
+.bb0 { margin-left:25px;}
+
+
+/*------Used in between the list items <li>, which is the spacing gray line ---*/
+
+.bba {border-bottom: 1px solid #333; float: none; 
+      width:125px;
+      margin-left:25px; margin-right: 25px;
+      padding-bottom: 0px;} 
+
+/************************ End Banner and top navigation Area **********************/
+
+
+/***********************************---shadow start--**********************************************/
+
+.shadow {-moz-box-shadow: 0px 3px 4px #6E6E6E; 
+	-webkit-box-shadow: 0px 3px 4px #6E6E6E; 
+	box-shadow: 0px 3px 4px #6E6E6E; 
+
+/* For IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#6E6E6E')";
+
+/* For IE 5.5 - 7 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#6E6E6E');
+}
+
+/********************************---shadow end---**************************************************/
+
+
+/***************************** -- Start Footer Area ----*******************************************/
+
+#footer {
+	width:980px;
+    min-width:980px;
+    position:relative;/*establish stacking order for z-index*/
+    z-index:5;/*layer it above the #faux column*/
+    clear:both;
+    height:180px;
+    margin:-140px auto 0;/*pull footer back into viewport with negative top margin*/
+    padding-bottom: 100px;
+    border-top:none;
+    text-align:center;
+    /*---Footer Background Color Gradient---*/   
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#272727, endColorstr=#272727);  
+    background: -webkit-gradient(linear, left top, left bottom, from(#272727), to(#272727));  
+    background: -moz-linear-gradient(top,  #272727,  #272727);  border: solid 0px #6D6D6D;
+     }
+
+/*footer nav area 1*/            
+
+#footer-layout-slicing-09
+{   position:relative;
+	float: left;
+	margin: 28px 0 0 50px;
+	width:100px;
+	height:105px; 
+	border: 0px solid #ff0000; }
+
+#footer-layout-slicing-09 ul
+{   list-style-type: none;
+	margin-top: 0px; 
+	margin-left: 0px;
+	padding-left: 0px; 
+	text-align: left;}
+
+#footer-layout-slicing-09 a
+{   text-decoration: none; 
+	color: #7e7e7e;
+	font-family: Candara, sans-serif;
+	font-size: 100%; 
+	text-align: left;}
+
+/*footer nav area 2*/  
+
+#footer-layout-slicing-10 
+{ position:relative;
+	float: left;
+	margin: 27px 0 0 40px;
+	width:250px;
+	height:120px; 
+	border: 0px solid black;}
+
+#footer-layout-slicing-10 ul
+{   list-style-type: none;
+	margin-top: 0px; 
+	margin-left: 0px;
+	padding-left: 0px; 
+	text-align:left;}
+	
+#footer-layout-slicing-10 a
+{ text-decoration: none; 
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	font-weight: 100;  
+	line-height: 90%;
+	text-align: left;
+	margin-left:0;}
+
+#footer-layout-slicing-10 p
+{ text-decoration: none; 
+	color: #7e7e7e;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	font-weight:100; 
+	line-height: 120%;
+	text-align: left;}
+
+#footer-layout-slicing-10 p.style2
+{   text-decoration: none; 
+	color: #7e7e7e;
+	font-family: Candara, sans-serif;
+	font-size: 110%; 
+	text-align: left;}
+
+/*-- Start Form in Footer section --*/
+
+
+/*-- Form--*/
+#formEmail p {
+	text-decoration: none; 
+	color: #7e7e7e;
+	font-family: Candara, sans-serif;
+	font-size: 110%; 
+	text-align: left;}
+
+#formEmail { position:relative;
+	float: left;
+	margin: 27px 0 0 60px;
+	padding-left: 0px;
+	width:400px;
+	height:200px; 
+	border: 0px solid black;}
+
+form { background-color:none;
+	font-family: Verdana;
+	font-size: 0.80em;
+	width: 400px; 
+    padding: 0px;	
+    color: #7e7e7e;}
+
+label { float: left;
+	width: 70px; 
+	display: block; 
+	clear: left;
+	text-align: left; 
+	padding:2px;
+	margin:0; 
+	vertical-align: middle;
+	
+	
+	}
+
+input, textarea { margin: 10px  0 10px 0;
+                  padding-top:0px; 
+                  display: block;
+                  resize:none;
+                  vertical-align:top;
+                  background: #ccc;} 
+.textfield {
+ font-family: Candara, sans-serif;
+ letter-spacing: 0.1em;
+ font-size: 1.0em;
+ color: #444;
+ text-decoration: none;
+ background-color: #ccc;
+ border: ridge 2px solid #6d6d6d;}
+
+.mysubmit { margin-left: 75px;
+            color:transparent;
+			width: 63px; height:20px;
+			display:block;
+            background-image:url(../images/content/sendbutton1.png);
+            background-repeat: no-repeat;
+            
+    	    cursor:pointer; 
+    	    filter:Alpha(opacity=75);
+		    -moz-opacity:0.75;
+		    opacity:0.75; 
+		    border:none; }
+             
+.mysubmit:hover { color:transparent;
+                  
+		          filter:Alpha(opacity=100);
+		          -moz-opacity:1.00;
+		          opacity:1.00; 
+		          border:none;} 
+
+                 
+
+.copyright { text-align: center;
+             clear:both;
+             height:40px;
+             background-color: transparent;
+             width:100%;
+             font-size:0.70em;
+             font-family:Verdana;
+             color:#7e7e7e; }                   
+
+/*************************************-- End Form in Footer section --******************************************/
+
+/******* HTml5 Compatibility with all browsers except IE 8 and earlier*****/
+
+header, nav, footer, figure, figcaption, section, article, aside { display: block; }
